@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Demo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", serif;
+      }
+      form {
+        width: 320px;
+        box-shadow: 0px 0px 2px 2px gray;
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        margin: auto;
+      }
+      .control {
+        display: flex;
+        flex-direction: column;
+      }
+      .control-inline {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h1 style="font-size: 36px; text-align: center">Login Form</h1>
+      <div
+        style="
+          border: 1px solid rgb(175, 175, 175);
+          border-radius: 5px;
+          border-collapse: collapse;
+          margin-bottom: 30px;
+        "
+      >
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+          "
+        >
+          <div
+            style="
+              padding: 10px;
+              width: 50%;
+              font-size: 20px;
+              font-weight: bold;
+              color: white;
+              border-radius: 5px;
+              background-color: red;
+              background: linear-gradient(to right, #a70897, #ff067a);
+            "
+          >
+            Login
+          </div>
+          <div
+            style="
+              padding: 10px;
+              width: 50%;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            Signup
+          </div>
+        </div>
+      </div>
+
+      <!-- label use for clarify input but need id of input -->
+      <div class="control">
+        <!-- <label for="Username">Username</label> -->
+        <input
+          style="
+            font-size: 20px;
+            padding: 15px 0px 15px 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 0px 0px rgb(175, 175, 175);
+            border: 2px solid rgb(175, 175, 175);
+          "
+          id="Username"
+          type="text"
+          placeholder="Email Address"
+        />
+      </div>
+      <div class="control">
+        <!-- <label for="Password">Password</label> -->
+        <input
+          style="
+            font-size: 20px;
+            padding: 15px 0px 15px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 0px 0px rgb(175, 175, 175);
+            border: 2px solid rgb(175, 175, 175);
+          "
+          id="Password"
+          type="password"
+          placeholder="Password"
+        />
+      </div>
+      <div class="control-inline">
+        <!-- <input type="checkbox" />
+        <span>Remember</span> -->
+        <a
+          style="
+            text-decoration: none;
+            background: linear-gradient(to right, #a70897, #ff067a);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+          "
+          href="#"
+          >Forgot Password?</a
+        >
+      </div>
+      <div>
+        <input
+          style="
+            width: 100%;
+            color: white;
+            padding: 10px 0px 10px 0px;
+            font-size: 20px;
+            font-weight: bold;
+            background: linear-gradient(to right, #a70897, #ff067a);
+            border: 0px;
+            border-radius: 5px;
+          "
+          type="submit"
+          value="Login"
+        />
+      </div>
+      <div style="margin-top: 30px; text-align: center">
+        <span>Not a member?</span>
+        <span
+          style="
+            background: linear-gradient(to right, #a70897, #ff067a);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+          "
+          >Signup now</span
+        >
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            width: 70%;
+            margin: auto;
+        }
+        table, tr, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table th, td{
+            padding: 5px;
+        }
+        .bg-pink{
+            background-color: rgb(234, 205, 209);
+        }
+        .bg-green{
+            background-color: rgb(182, 220, 125);
+        }
+        .bg-brown{
+            background-color: rgb(166, 128, 128);
+        }
+        .bg-blue{
+            background-color: lightblue;
+        }
+        .bg-gray{
+            background-color: rgb(189, 189, 189);
+        }
+    </style>
+</head>
+<body>
+        <table>
+            <thead>
+                <tr>
+                    <th class="bg-blue bottom" rowspan="2">Name</th>
+                    <th class="bg-blue" rowspan="2">ID</th>
+                    <th class="bg-blue" colspan="2">Membership Date</th>
+                    <th class="bg-blue" rowspan="2">Balance</th>
+                </tr>
+                <tr>
+                    <th class="bg-green">Joined</th>
+                    <th class="bg-brown">Cancelled</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bg-pink">Messi</td>
+                    <td>M-001</td>
+                    <td>2004</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td class="bg-pink">CR7</td>
+                    <td class="bg-gray">C-001</td>
+                    <td class="bg-gray">2002</td>
+                    <td class="bg-gray">N/A</td>
+                    <td class="bg-gray">N/A</td>
+                </tr>
+                <tr>
+                    <td class="bg-pink">Neymar</td>
+                    <td>N-001</td>
+                    <td>2006</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="background-color: lightblue;">
+                    <td style="text-align: right; color: brown; font-weight: bold;" colspan="4">Total Balance</td>
+                    <td style="font-weight: bold;">N/A</td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+</html>
